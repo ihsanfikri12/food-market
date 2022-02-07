@@ -12,7 +12,7 @@ You can view it on here : https://food-market.netlify.app/
 
 In the project directory, you can run:
 
-### npm install
+### `npm install`
 
 Install dependency for app before start with my project
 
