@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 
 import MarketInputQty from "./MarketInputQty";
 
-import { IoCloseOutline } from "react-icons/io5";
+import { IoClose } from "react-icons/io5";
 import { FcAlarmClock, FcGoodDecision } from "react-icons/fc";
 
 import FoodContext from "../../contexts/FoodContext";
@@ -71,13 +71,13 @@ const MarketItem = () => {
 
       <div className="fixed md:inset-0 md:m-auto  w-full h-screen lg:w-2/3 md:h-max bg-gray-100 z-40">
         <div
-          className="absolute top-5 right-3 sm:right-2 lg:right-3 xl:right-8 text-4xl cursor-pointer"
+          className="absolute top-24 text-black md:top-5 right-3 sm:right-2 lg:right-3 xl:right-8 text-4xl cursor-pointer"
           onClick={onCloseHandler}
         >
-          <IoCloseOutline />
+          <IoClose />
         </div>
 
-        <div className="grid md:px-5 py-20 md:py-10  md:grid-cols-2 gap-y-5 gap-x-2 justify-center justify-items-center">
+        <div className="grid md:px-5 sm:py-32 md:py-10  md:grid-cols-2 gap-y-5 gap-x-2 justify-center justify-items-center">
           <div className="overflow-hidden object-cover object-center">
             <img src={image} alt={title.split(" ").slice(1).join("")} />
           </div>

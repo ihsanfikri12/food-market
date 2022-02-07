@@ -61,11 +61,16 @@ const Nav = () => {
     });
   };
 
+  const onTitleCLick = () => {
+    foodCtx.setCheckout(false);
+    foodCtx.setActiveFood({ isActive: false, value: {} });
+  };
+
   return (
     <nav className="fixed z-40 bg-white w-full px-5 gap-2 md:px-10 lg:px-32 flex items-center h-20 border-y-2">
       <p
         className="sm:text-lg md:text-2xl lg:text-3xl font-bold text-orange-600 cursor-pointer"
-        onClick={foodCtx.setCheckout.bind(null, false)}
+        onClick={onTitleCLick}
       >
         Food Market
       </p>
